@@ -1,0 +1,17 @@
+.research-home {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .research-card-wrapper {
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  

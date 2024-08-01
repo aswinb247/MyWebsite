@@ -1,0 +1,19 @@
+
+.home-content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+  .home-photo {
+    width: 20vw;
+    position: absolute;
+    top:15vh;
+    border-radius: 50%;
+  }
+  
+  .home-text {
+    padding-left: 2vw;
+    font-size: 1rem; 
+    color: #333;
+  }
+  
