@@ -39,7 +39,7 @@ const CarouselPhoto = () => {
     >
       {imageUrl.map((item, i) => (
         <ImageContainer key={i}>
-          <Image src={`/blogimg/${item}`} alt={`Slide ${i}`} />
+          <Image src={`/MyWebsite/blogimg/${item}`} alt={`Slide ${i}`} />
         </ImageContainer>
       ))}
     </Carousel>

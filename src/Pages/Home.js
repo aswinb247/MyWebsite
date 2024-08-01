@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home">
       <ParticlesBG />
       <div>
-        <img src="/photo.jpeg" alt="Aswin" className="home-photo" />
+        <img src="/MyWebsite/photo.jpeg" alt="Aswin" className="home-photo" />
         <div className="home-content">
           <p className="home-text">
             In a world where the quizzical tumbleweeds of intergalactic jazz

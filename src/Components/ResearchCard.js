@@ -14,7 +14,7 @@ const ResearchCard = ({ imageUrl, title, body, href }) => {
         alt={title}
         height="200"
         width="200"
-        image={`/researchimg/${imageUrl}`}
+        image={`/MyWebsite/researchimg/${imageUrl}`}
         style={{ objectFit: "contain" }}
       />
       <CardContent>
