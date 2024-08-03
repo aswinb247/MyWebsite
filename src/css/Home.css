@@ -6,9 +6,10 @@
     margin-top: 5vh;
 }
   .home-photo {
-    width: 300px;
+    width: 350px;
+    height: 350px;
     position: relative;
-    top:23vh;
+    top:20vh;
     border-radius: 50%;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   }
