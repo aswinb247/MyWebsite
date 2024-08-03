@@ -16,10 +16,10 @@ import SchoolIcon from "@mui/icons-material/School";
 
 const pages = ["Resume", "Research", "Blog"];
 const socialMediaIcons = [
-  { icon: <InstagramIcon />, link: "https://www.instagram.com/" },
   { icon: <SchoolIcon />, link: "https://scholar.google.com/" },
   { icon: <LinkedInIcon />, link: "https://www.linkedin.com/" },
   { icon: <TwitterIcon />, link: "https://x.com/home" },
+  { icon: <InstagramIcon />, link: "https://www.instagram.com/" },
 ];
 
 function ResponsiveAppBar() {

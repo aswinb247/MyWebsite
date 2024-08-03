@@ -1,3 +1,4 @@
+import zIndex from "@mui/material/styles/zIndex";
 
 
 const particlesConfig = {
@@ -491,8 +492,9 @@ const particlesConfig = {
   responsive: [],
   smooth: false,
   style: {
-    height: "55vh",
-    position: 'relative',
+    height: "40vh",
+    position: 'absolute',
+    zIndex: -100
   },
   themes: [],
   zLayers: 100,

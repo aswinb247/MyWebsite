@@ -1,22 +1,14 @@
 import React from "react";
-import Carousel from "react-material-ui-carousel";
+import Carousel from "react-multi-carousel";
 import { Paper } from "@mui/material";
+import "react-multi-carousel/lib/styles.css";
+import "../css/Carousel_.css";
 import { styled } from "@mui/system";
 
-const imageUrl = [
-  "photo.jpeg",
-  "photo.jpeg",
-  "photo.jpeg",
-  "photo.jpeg",
-  "photo.jpeg",
-  "photo.jpeg",
-  "photo.jpeg",
-];
 const ImageContainer = styled(Paper)(({ theme }) => ({
   position: "relative",
   width: "100%",
-  paddingTop: "56.25%",
-  overflow: "hidden",
+  paddingBottom: "177.78%",
 }));
 
 const Image = styled("img")({
@@ -26,20 +18,69 @@ const Image = styled("img")({
   width: "100%",
   height: "100%",
   objectFit: "cover",
+  margin: "3px",
+  borderRadius: "16px",
 });
 
 const CarouselPhoto = () => {
   return (
-    <Carousel 
-      animation="slide"
+    <Carousel
+      additionalTransfrom={0}
+      arrows={true}
       autoPlay
-      interval={3000}
-      indicators={false}
-      navButtonsAlwaysVisible
+      autoPlaySpeed={5000}
+      centerMode={false}
+      className="carousel-container"
+      containerClass={`w-full`}
+      dotListClass=""
+      draggable
+      focusOnSelect={false}
+      infinite
+      itemClass=""
+      keyBoardControl
+      minimumTouchDrag={80}
+      pauseOnHover
+      renderArrowsWhenDisabled={false}
+      renderButtonGroupOutside={false}
+      renderDotsOutside={false}
+      responsive={{
+        desktop: {
+          breakpoint: {
+            max: 3000,
+            min: 1024,
+          },
+          items: 4,
+          partialVisibilityGutter: 40,
+        },
+        mobile: {
+          breakpoint: {
+            max: 464,
+            min: 0,
+          },
+          items: 2,
+          partialVisibilityGutter: 30,
+        },
+        tablet: {
+          breakpoint: {
+            max: 1024,
+            min: 464,
+          },
+          items: 3,
+          partialVisibilityGutter: 30,
+        },
+      }}
+      rewind={false}
+      rewindWithAnimation={false}
+      rtl={false}
+      shouldResetAutoplay
+      showDots={false}
+      sliderClass=""
+      slidesToSlide={2}
+      swipeable
     >
-      {imageUrl.map((item, i) => (
-        <ImageContainer key={i}>
-          <Image src={`/MyWebsite/blogimg/${item}`} alt={`Slide ${i}`} />
+      {Array.from({ length: 25 }, (_, i) => (
+        <ImageContainer key={i + 1}>
+          <Image src={`/MyWebsite/blogimg/${i + 1}.jpg`} alt={`Slide ${i}`} />
         </ImageContainer>
       ))}
     </Carousel>
