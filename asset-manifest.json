@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MyWebsite/static/css/main.7ba75df6.css",
-    "main.js": "/MyWebsite/static/js/main.2c534375.js",
+    "main.css": "/MyWebsite/static/css/main.9b7c9e4d.css",
+    "main.js": "/MyWebsite/static/js/main.2e39e7c6.js",
     "static/media/revicons.eot": "/MyWebsite/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/MyWebsite/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/MyWebsite/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/MyWebsite/index.html",
-    "main.7ba75df6.css.map": "/MyWebsite/static/css/main.7ba75df6.css.map",
-    "main.2c534375.js.map": "/MyWebsite/static/js/main.2c534375.js.map"
+    "main.9b7c9e4d.css.map": "/MyWebsite/static/css/main.9b7c9e4d.css.map",
+    "main.2e39e7c6.js.map": "/MyWebsite/static/js/main.2e39e7c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ba75df6.css",
-    "static/js/main.2c534375.js"
+    "static/css/main.9b7c9e4d.css",
+    "static/js/main.2e39e7c6.js"
   ]
 }
