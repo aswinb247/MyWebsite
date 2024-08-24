@@ -9,6 +9,8 @@ const ImageContainer = styled(Paper)(({ theme }) => ({
   position: "relative",
   width: "100%",
   paddingBottom: "177.78%",
+  backgroundColor: "#d9d9d9",
+  boxShadow: "none",
 }));
 
 const Image = styled("img")({
@@ -19,72 +21,73 @@ const Image = styled("img")({
   height: "100%",
   objectFit: "cover",
   margin: "3px",
-  borderRadius: "16px",
+  borderRadius: "5%",
 });
 
 const CarouselPhoto = ({ id }) => {
   return (
-    <Carousel
-      additionalTransfrom={0}
-      arrows={false}
-      autoPlay
-      autoPlaySpeed={2000}
-      centerMode={false}
-      className="carousel-container"
-      containerClass={`w-full`}
-      dotListClass=""
-      draggable
-      focusOnSelect={false}
-      infinite
-      itemClass=""
-      keyBoardControl
-      minimumTouchDrag={80}
-      pauseOnHover
-      renderArrowsWhenDisabled={false}
-      renderButtonGroupOutside={false}
-      renderDotsOutside={false}
-      responsive={{
-        desktop: {
-          breakpoint: {
-            max: 3000,
-            min: 1024,
+    <div ref={id}>
+      <Carousel
+        additionalTransfrom={0}
+        arrows={false}
+        autoPlay
+        autoPlaySpeed={2000}
+        centerMode={false}
+        className="carousel-container"
+        containerClass={`w-full`}
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        pauseOnHover
+        renderArrowsWhenDisabled={false}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={{
+          desktop: {
+            breakpoint: {
+              max: 3000,
+              min: 1024,
+            },
+            items: 4,
+            partialVisibilityGutter: 40,
           },
-          items: 4,
-          partialVisibilityGutter: 40,
-        },
-        mobile: {
-          breakpoint: {
-            max: 464,
-            min: 0,
+          mobile: {
+            breakpoint: {
+              max: 464,
+              min: 0,
+            },
+            items: 2,
+            partialVisibilityGutter: 30,
           },
-          items: 2,
-          partialVisibilityGutter: 30,
-        },
-        tablet: {
-          breakpoint: {
-            max: 1024,
-            min: 464,
+          tablet: {
+            breakpoint: {
+              max: 1024,
+              min: 464,
+            },
+            items: 3,
+            partialVisibilityGutter: 30,
           },
-          items: 3,
-          partialVisibilityGutter: 30,
-        },
-      }}
-      rewind={false}
-      rewindWithAnimation={false}
-      rtl={false}
-      shouldResetAutoplay
-      showDots={false}
-      sliderClass=""
-      slidesToSlide={2}
-      swipeable
-      id={id}
-    >
-      {Array.from({ length: 25 }, (_, i) => (
-        <ImageContainer key={i + 1}>
-          <Image src={`/MyWebsite/blogimg/${i + 1}.jpg`} alt={`Slide ${i}`} />
-        </ImageContainer>
-      ))}
-    </Carousel>
+        }}
+        rewind={false}
+        rewindWithAnimation={false}
+        rtl={false}
+        shouldResetAutoplay
+        showDots={false}
+        sliderClass=""
+        slidesToSlide={2}
+        swipeable
+      >
+        {Array.from({ length: 25 }, (_, i) => (
+          <ImageContainer key={i + 1}>
+            <Image src={`/MyWebsite/blogimg/${i + 1}.jpg`} alt={`Slide ${i}`} />
+          </ImageContainer>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

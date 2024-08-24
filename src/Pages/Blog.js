@@ -1,20 +1,29 @@
 import React from "react";
-import { Grid, Typography, Divider } from "@mui/material";
+import { Grid, Typography, Divider, Link } from "@mui/material";
 import CarouselPhoto from "../Components/CarouselPhoto";
+import CameraIcon from "@mui/icons-material/Camera";
+import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import "../css/Blog.css";
 const Blog = () => {
+  const myRef = React.useRef(null);
+  const executeScroll = () =>
+    myRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
   return (
     <div
       style={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        margin: "10px",
-        marginTop: "72px",
+        paddingTop: "68px",
+        backgroundColor: "#d9d9d9",
       }}
     >
-      <Grid container justifyContent="center" alignItems="center">
-        <Grid item xs={12}>
+      <Grid container justifyContent="center" alignItems="center" spacing={2}>
+        {/* <Grid item xs={12}>
           <Typography variant="h2" className="Title">
             Blog
           </Typography>
@@ -22,11 +31,22 @@ const Blog = () => {
             className="unliner"
             style={{ display: "inline-block", marginLeft: "6px" }}
           ></div>
-        </Grid>
-        <Grid item xs={7} sx={{ textAlign: "center" }}>
+        </Grid> */}
+        <Grid item xs={8} sx={{ marginTop: "50px", display: "flex" }}>
+          <Divider
+            orientation="vertical"
+            variant="middle"
+            flexItem
+            sx={{ marginRight: "30px", marginTop: "30px" }}
+          />
           <div>
-            <Typography variant="h4" className="Heading">
-              Behind the lens
+            <Typography
+              variant="h4"
+              className="Heading"
+              sx={{ textAlign: "center" }}
+            >
+              {" "}
+              BEHIND THE LENS
             </Typography>
             <div className="unliner"></div>
             <Typography variant="p" className="Text-Body">
@@ -36,14 +56,30 @@ const Blog = () => {
               to a cascade of mixed emotions which can’t be easily articulated.
               Being behind the lens might not capture oneself but can capture
               the charm and details which one wishes to see and preserve
-              forever…..who doesn’t wish to freeze time :).
+              forever…..
+              <span
+                style={{
+                  color: "#231942",
+                  fontStyle: "italic",
+                  fontWeight: "500",
+                }}
+              >
+                who doesn’t wish to freeze time :).
+              </span>
+              <br />
+              <br />
             </Typography>
             <Typography>
-              <a href="#blogPhoto">Scroll down for my picture carousel!</a>
+              <Link underline="hover" onClick={executeScroll}>
+                Scroll down for my picture carousel!
+              </Link>
             </Typography>
           </div>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={1} sx={{ textAlign: "center" }}>
+          <CameraIcon sx={{ fontSize: "100px" }} />
+        </Grid>
+        <Grid item xs={8}>
           <Divider
             orientation="horizontal"
             variant="middle"
@@ -51,10 +87,18 @@ const Blog = () => {
             sx={{ marginBottom: "30px", marginTop: "30px" }}
           />
         </Grid>
-        <Grid item xs={7} sx={{ textAlign: "center" }}>
+        <Grid xs={12} />
+        <Grid item xs={1} sx={{ textAlign: "center" }}>
+          <MusicNoteIcon sx={{ fontSize: "100px" }} />
+        </Grid>
+        <Grid item xs={8} sx={{ display: "flex", textAlign: "right" }}>
           <div>
-            <Typography variant="h4" className="Heading">
-              Music speaks
+            <Typography
+              variant="h4"
+              className="Heading"
+              sx={{ textAlign: "center" }}
+            >
+              MUSIC SPEAKS
             </Typography>
             <div className="unliner"></div>
             <Typography variant="p" className="Text-Body">
@@ -70,31 +114,57 @@ const Blog = () => {
               emotions that are deeply personal. It's fascinating how a song can
               bring out emotions we didn’t even realise we were feeling. Some
               lyrics are so profound that they etch themselves into my mind,
-              carrying a depth that lingers long after the song has ended. I
-              mostly find myself drawn to acoustic pop, with Ed Sheeran being my
-              all-time favourite. There's something about his lyrics paired with
-              the simplicity of an acoustic guitar that brings a sense of peace
-              to my day. Alongside this, I mostly enjoy melodious Tamizh songs
-              and a bit of mix of Hindi, Malayalam songs too. Sharing music has
-              become a way for me to stay connected with others, exchanging
-              songs like we’re sharing pieces of our lives. Here are the links
-              to my Spotify playlist:{" "}
-              <a href="https://open.spotify.com/playlist/3VCfd19J9IlaJyASfercF5?si=0f74bf4302c5494c">
+              carrying a depth that lingers long after the song has ended.
+              <br />
+              <br />I mostly find myself drawn to acoustic pop, with Ed Sheeran
+              being my all-time favourite. There's something about his lyrics
+              paired with the simplicity of an acoustic guitar that brings a
+              sense of peace to my day. Alongside this, I mostly enjoy melodious
+              Tamizh songs and a bit of mix of Hindi, Malayalam songs too.
+              Sharing music has become a way for me to stay connected with
+              others, exchanging songs like we’re sharing pieces of our lives.
+              <br />
+              <br />
+              <span
+                style={{
+                  color: "#231942",
+                  fontStyle: "italic",
+                  fontWeight: "500",
+                }}
+              >
+                Here are the links to my Spotify playlist:{" "}
+              </span>
+              <Link
+                underline="hover"
+                href="https://open.spotify.com/playlist/3VCfd19J9IlaJyASfercF5?si=0f74bf4302c5494c"
+              >
                 Tamizh
-              </a>
-              ,
-              <a href="https://open.spotify.com/playlist/72qykKkbtDG7VfrwTybeHl?si=a670d2d7ae984f37">
+              </Link>{" "}
+              ,{" "}
+              <Link
+                underline="hover"
+                href="https://open.spotify.com/playlist/72qykKkbtDG7VfrwTybeHl?si=a670d2d7ae984f37"
+              >
                 English
-              </a>
-              ,
-              <a href="https://open.spotify.com/playlist/72qykKkbtDG7VfrwTybeHl?si=a670d2d7ae984f37">
+              </Link>{" "}
+              ,{" "}
+              <Link
+                underline="hover"
+                href="https://open.spotify.com/playlist/72qykKkbtDG7VfrwTybeHl?si=a670d2d7ae984f37"
+              >
                 Hindi and other languages
-              </a>
+              </Link>
               .
             </Typography>
           </div>
+          <Divider
+            orientation="vertical"
+            variant="middle"
+            flexItem
+            sx={{ marginLeft: "30px", marginTop: "30px" }}
+          />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={8}>
           <Divider
             orientation="horizontal"
             variant="middle"
@@ -103,7 +173,7 @@ const Blog = () => {
           />
         </Grid>
         <Grid item xs={12} sx={{ height: "90vh" }}>
-          <CarouselPhoto id="blogPhoto" />
+          <CarouselPhoto id={myRef} />
         </Grid>
       </Grid>
     </div>
