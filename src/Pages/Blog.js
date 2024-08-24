@@ -18,7 +18,10 @@ const Blog = () => {
           <Typography variant="h2" className="Title">
             Blog
           </Typography>
-          <div className="unliner" style={{ display: "inline-block" , marginLeft:"6px"}}></div>
+          <div
+            className="unliner"
+            style={{ display: "inline-block", marginLeft: "6px" }}
+          ></div>
         </Grid>
         <Grid item xs={7} sx={{ textAlign: "center" }}>
           <div>
@@ -48,13 +51,12 @@ const Blog = () => {
             sx={{ marginBottom: "30px", marginTop: "30px" }}
           />
         </Grid>
-
         <Grid item xs={7} sx={{ textAlign: "center" }}>
           <div>
             <Typography variant="h4" className="Heading">
               Music speaks
             </Typography>
-            <div className="unliner" ></div>
+            <div className="unliner"></div>
             <Typography variant="p" className="Text-Body">
               Music has been a significant part of my life since childhood,
               especially during the five years I played the keyboard.. Over
@@ -100,7 +102,7 @@ const Blog = () => {
             sx={{ marginBottom: "30px", marginTop: "30px" }}
           />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} sx={{ height: "90vh" }}>
           <CarouselPhoto id="blogPhoto" />
         </Grid>
       </Grid>
