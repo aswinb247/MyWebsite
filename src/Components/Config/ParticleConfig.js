@@ -1,11 +1,8 @@
-import zIndex from "@mui/material/styles/zIndex";
-
-
 const particlesConfig = {
   autoPlay: true,
   background: {
     color: {
-      value: "#000000ff",
+      value: "#000000",
     },
     image: "",
     position: "",
@@ -28,9 +25,8 @@ const particlesConfig = {
   delay: 0,
   fullScreen: {
     enable: true,
-    zIndex: -0,
+    zIndex: -1,
   },
- 
   detectRetina: true,
   duration: 0,
   fpsLimit: 120,
@@ -38,18 +34,18 @@ const particlesConfig = {
     detectsOn: "window",
     events: {
       onClick: {
-        enable: true,
-        mode: "push",
+        enable: false,
+        mode: [],
       },
       onDiv: {
-        selectors: {},
+        selectors: [],
         enable: false,
-        mode: {},
+        mode: [],
         type: "circle",
       },
       onHover: {
-        enable: true,
-        mode: "repulse",
+        enable: false,
+        mode: [],
         parallax: {
           enable: false,
           force: 2,
@@ -72,7 +68,7 @@ const particlesConfig = {
         duration: 0.4,
         easing: "ease-out-quad",
         factor: 1,
-        maxSpeed: 70,
+        maxSpeed: 50,
         speed: 1,
       },
       bounce: {
@@ -86,7 +82,7 @@ const particlesConfig = {
           distance: 200,
           duration: 0.4,
           mix: false,
-          selectors: {},
+          selectors: [],
         },
       },
       connect: {
@@ -99,7 +95,7 @@ const particlesConfig = {
       grab: {
         distance: 100,
         links: {
-          blink: true,
+          blink: false,
           consent: false,
           opacity: 1,
         },
@@ -116,8 +112,8 @@ const particlesConfig = {
         distance: 200,
         duration: 0.4,
         factor: 100,
-        speed: 0.8,
-        maxSpeed: 40,
+        speed: 1,
+        maxSpeed: 50,
         easing: "ease-out-quad",
         divs: {
           distance: 200,
@@ -126,7 +122,7 @@ const particlesConfig = {
           speed: 1,
           maxSpeed: 50,
           easing: "ease-out-quad",
-          selectors: {},
+          selectors: [],
         },
       },
       slow: {
@@ -180,17 +176,17 @@ const particlesConfig = {
       maxSpeed: 50,
       mode: "bounce",
       overlap: {
-        enable: false,
+        enable: true,
         retries: 0,
       },
     },
     color: {
-      value: "#ff0000",
+      value: "#fff",
       animation: {
         h: {
           count: 0,
-          enable: true,
-          speed: 20,
+          enable: false,
+          speed: 1,
           decay: 0,
           delay: 0,
           sync: true,
@@ -220,13 +216,46 @@ const particlesConfig = {
       close: true,
       fill: true,
       options: {},
-      type: {},
+      type: [],
     },
-    groups: {},
+    groups: {
+      z5000: {
+        number: {
+          value: 70,
+        },
+        zIndex: {
+          value: 50,
+        },
+      },
+      z7500: {
+        number: {
+          value: 30,
+        },
+        zIndex: {
+          value: 75,
+        },
+      },
+      z2500: {
+        number: {
+          value: 50,
+        },
+        zIndex: {
+          value: 25,
+        },
+      },
+      z1000: {
+        number: {
+          value: 40,
+        },
+        zIndex: {
+          value: 10,
+        },
+      },
+    },
     move: {
       angle: {
         offset: 0,
-        value: 90,
+        value: 10,
       },
       attract: {
         distance: 200,
@@ -244,14 +273,14 @@ const particlesConfig = {
       },
       decay: 0,
       distance: {},
-      direction: "none",
+      direction: "right",
       drift: 0,
       enable: true,
       gravity: {
-        acceleration: 1,
+        acceleration: 9.81,
         enable: false,
         inverse: false,
-        maxSpeed: 9.81,
+        maxSpeed: 50,
       },
       path: {
         clamp: true,
@@ -270,7 +299,7 @@ const particlesConfig = {
       },
       random: false,
       size: false,
-      speed: 6,
+      speed: 0.25,
       spin: {
         acceleration: 0,
         enable: false,
@@ -286,7 +315,7 @@ const particlesConfig = {
     },
     number: {
       density: {
-        enable: true,
+        enable: false,
         width: 1920,
         height: 1080,
       },
@@ -294,10 +323,10 @@ const particlesConfig = {
         mode: "delete",
         value: 0,
       },
-      value: 80,
+      value: 200,
     },
     opacity: {
-      value: 0.9,
+      value: 1,
       animation: {
         count: 0,
         enable: false,
@@ -329,10 +358,7 @@ const particlesConfig = {
       type: "circle",
     },
     size: {
-      value: {
-        min: 3,
-        max: 13,
-      },
+      value: 3,
       animation: {
         count: 0,
         enable: false,
@@ -346,11 +372,11 @@ const particlesConfig = {
       },
     },
     stroke: {
-      width: 0.94,
+      width: 0,
     },
     zIndex: {
-      value: 0,
-      opacityRate: 1,
+      value: 5,
+      opacityRate: 0.5,
       sizeRate: 1,
       velocityRate: 1,
     },
@@ -457,11 +483,11 @@ const particlesConfig = {
     links: {
       blink: false,
       color: {
-        value: "#ffffff",
+        value: "#fff",
       },
       consent: false,
-      distance: 150,
-      enable: true,
+      distance: 100,
+      enable: false,
       frequency: 1,
       opacity: 1,
       shadow: {
@@ -498,7 +524,72 @@ const particlesConfig = {
   },
   themes: [],
   zLayers: 100,
-  name: "Basic",
+  emitters: {
+    autoPlay: true,
+    fill: true,
+    life: {
+      wait: false,
+    },
+    rate: {
+      quantity: 1,
+      delay: 7,
+    },
+    shape: {
+      options: {},
+      replace: {
+        color: false,
+        opacity: false,
+      },
+      type: "square",
+    },
+    startCount: 0,
+    size: {
+      mode: "percent",
+      height: 0,
+      width: 0,
+    },
+    particles: {
+      shape: {
+        type: "images",
+        options: {
+          images: {
+            src: "https://particles.js.org/images/cyan_amongus.png",
+            width: 500,
+            height: 634,
+          },
+        },
+      },
+      size: {
+        value: 40,
+      },
+      move: {
+        speed: 10,
+        outModes: {
+          default: "none",
+          right: "destroy",
+        },
+        straight: true,
+      },
+      zIndex: {
+        value: 0,
+      },
+      rotate: {
+        value: {
+          min: 0,
+          max: 360,
+        },
+        animation: {
+          enable: true,
+          speed: 10,
+          sync: true,
+        },
+      },
+    },
+    position: {
+      x: -5,
+      y: 55,
+    },
+  },
   motion: {
     disable: false,
     reduce: {

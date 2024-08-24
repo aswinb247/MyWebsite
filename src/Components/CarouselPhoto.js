@@ -22,13 +22,13 @@ const Image = styled("img")({
   borderRadius: "16px",
 });
 
-const CarouselPhoto = () => {
+const CarouselPhoto = ({ id }) => {
   return (
     <Carousel
       additionalTransfrom={0}
-      arrows={true}
+      arrows={false}
       autoPlay
-      autoPlaySpeed={5000}
+      autoPlaySpeed={2000}
       centerMode={false}
       className="carousel-container"
       containerClass={`w-full`}
@@ -77,6 +77,7 @@ const CarouselPhoto = () => {
       sliderClass=""
       slidesToSlide={2}
       swipeable
+      id={id}
     >
       {Array.from({ length: 25 }, (_, i) => (
         <ImageContainer key={i + 1}>

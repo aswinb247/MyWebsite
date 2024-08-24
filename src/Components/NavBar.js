@@ -14,7 +14,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SchoolIcon from "@mui/icons-material/School";
 
-const pages = ["Resume", "Research", "Blog"];
+const pages = [ "Research", "Blog"];
 const socialMediaIcons = [
   {
     icon: <SchoolIcon />,
