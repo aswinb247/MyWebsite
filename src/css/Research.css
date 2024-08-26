@@ -5,6 +5,8 @@
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    background-color: #d9d9d9;
+    min-height: 92vh;
   }
   
   .research-card-wrapper {
@@ -14,4 +16,3 @@
     display: flex;
     justify-content: center;
   }
-  

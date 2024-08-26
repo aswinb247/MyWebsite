@@ -19,7 +19,7 @@ const Blog = () => {
     width: "100vw",
     zIndex: "-1",
     objectFit: "cover",
-    opacity: 0.2,
+    opacity: 0.1,
   };
   return (
     <div
@@ -85,7 +85,7 @@ const Blog = () => {
             sx={{ marginBottom: "30px", marginTop: "30px" }}
           />
         </Grid>
-        <Grid item xs={8} sx={{ display: "flex" }}>
+        <Grid item xs={8} sx={{ display: "flex" , textAlign:"right"}}>
           <Divider
             orientation="vertical"
             variant="middle"

@@ -13,9 +13,9 @@ const App = () => {
         <ResponsiveAppBar />
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route path="/resume" element={<About/>} />
+          <Route path="/research and cv" element={<Research/>} />
           <Route path="/blog" element={<Blog/>} />
-          <Route path="/research" element={<Research/>} />
+          <Route path="/about" element={<About/>} />
           <Route path="*" element={<Home/>} />
         </Routes>
     </>
