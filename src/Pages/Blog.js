@@ -1,9 +1,8 @@
 import React from "react";
 import { Grid, Typography, Divider, Link } from "@mui/material";
 import CarouselPhoto from "../Components/CarouselPhoto";
-import CameraIcon from "@mui/icons-material/Camera";
-import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import "../css/Blog.css";
+
 const Blog = () => {
   const myRef = React.useRef(null);
   const executeScroll = () =>
@@ -12,26 +11,28 @@ const Blog = () => {
       block: "end",
       inline: "nearest",
     });
+  const imgStyle = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    height: "100vh",
+    width: "100vw",
+    zIndex: "-1",
+    objectFit: "cover",
+    opacity: 0.2,
+  };
   return (
     <div
       style={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        paddingTop: "68px",
-        backgroundColor: "#d9d9d9",
+        paddingTop: "50px",
+        backgroundColor: "transparent",
       }}
     >
+      <img src="/MyWebsite/blogbg.jpeg" alt="Background" style={imgStyle} />
       <Grid container justifyContent="center" alignItems="center" spacing={2}>
-        {/* <Grid item xs={12}>
-          <Typography variant="h2" className="Title">
-            Blog
-          </Typography>
-          <div
-            className="unliner"
-            style={{ display: "inline-block", marginLeft: "6px" }}
-          ></div>
-        </Grid> */}
         <Grid item xs={8} sx={{ marginTop: "50px", display: "flex" }}>
           <Divider
             orientation="vertical"
@@ -76,9 +77,6 @@ const Blog = () => {
             </Typography>
           </div>
         </Grid>
-        <Grid item xs={1} sx={{ textAlign: "center" }}>
-          <CameraIcon sx={{ fontSize: "100px" }} />
-        </Grid>
         <Grid item xs={8}>
           <Divider
             orientation="horizontal"
@@ -87,11 +85,13 @@ const Blog = () => {
             sx={{ marginBottom: "30px", marginTop: "30px" }}
           />
         </Grid>
-        <Grid xs={12} />
-        <Grid item xs={1} sx={{ textAlign: "center" }}>
-          <MusicNoteIcon sx={{ fontSize: "100px" }} />
-        </Grid>
-        <Grid item xs={8} sx={{ display: "flex", textAlign: "right" }}>
+        <Grid item xs={8} sx={{ display: "flex" }}>
+          <Divider
+            orientation="vertical"
+            variant="middle"
+            flexItem
+            sx={{ marginRight: "30px", marginTop: "30px" }}
+          />
           <div>
             <Typography
               variant="h4"
@@ -136,20 +136,26 @@ const Blog = () => {
               </span>
               <Link
                 underline="hover"
+                target="_blank"
+                rel="noopener"
                 href="https://open.spotify.com/playlist/3VCfd19J9IlaJyASfercF5?si=0f74bf4302c5494c"
               >
                 Tamizh
-              </Link>{" "}
+              </Link>
               ,{" "}
               <Link
                 underline="hover"
+                target="_blank"
+                rel="noopener"
                 href="https://open.spotify.com/playlist/72qykKkbtDG7VfrwTybeHl?si=a670d2d7ae984f37"
               >
                 English
-              </Link>{" "}
+              </Link>
               ,{" "}
               <Link
                 underline="hover"
+                target="_blank"
+                rel="noopener"
                 href="https://open.spotify.com/playlist/72qykKkbtDG7VfrwTybeHl?si=a670d2d7ae984f37"
               >
                 Hindi and other languages
@@ -157,12 +163,6 @@ const Blog = () => {
               .
             </Typography>
           </div>
-          <Divider
-            orientation="vertical"
-            variant="middle"
-            flexItem
-            sx={{ marginLeft: "30px", marginTop: "30px" }}
-          />
         </Grid>
         <Grid item xs={8}>
           <Divider

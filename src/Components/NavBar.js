@@ -14,13 +14,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SchoolIcon from "@mui/icons-material/School";
 
-const pages = [ "Research", "Blog"];
+const pages = ["Research AND CV", "Blog"];
 const socialMediaIcons = [
   {
     icon: <SchoolIcon />,
     link: "https://scholar.google.com/citations?user=s7baI_gAAAAJ&hl=en",
   },
-  { icon: <LinkedInIcon />, link: "www.linkedin.com/in/aswinbalaji247" },
+  { icon: <LinkedInIcon />, link: "https://linkedin.com/in/aswinbalaji247/" },
   { icon: <TwitterIcon />, link: "https://x.com/aswinb_247" },
   { icon: <InstagramIcon />, link: "https://www.instagram.com/aswin_b247/" },
 ];
