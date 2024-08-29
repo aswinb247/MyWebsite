@@ -80,8 +80,10 @@ const Tab1Content = () => {
           >
             arXiv:2311.08101
           </Link>{" "}
-          (2024)
-          <sup style={{ fontStyle: "italic" }}>manuscript is under review.</sup>
+          (2024).
+          <span style={{ fontStyle: "italic" }}>
+            manuscript is under review.
+          </span>
           <br />
           <span style={{ fontWeight: "600" }}>Keywords:</span> Emergence of
           order, Transition Networks, Complexity, Network entropy, Fluctuations
@@ -110,12 +112,13 @@ const Tab1Content = () => {
           >
             arXiv:2311.08101
           </Link>{" "}
-          (2024)
-          <sup style={{ fontStyle: "italic" }}>manuscript is under review.</sup>
-          <br />
-          <span style={{ fontWeight: "600" }}>
-            Authors: Shruti Tandon, Aswin Balaji
+          (2024).
+          <span style={{ fontStyle: "italic" }}>
+            manuscript is under review.
           </span>
+          <br />
+          <span style={{ fontWeight: "600" }}>Authors: </span>
+          Shruti Tandon, <span style={{ fontWeight: "600" }}>Aswin Balaji</span>
           , Norbert Marwan, Jürgen Kurths, R. I. Sujith
           <br />
           <span style={{ fontWeight: "600" }}>Keywords:</span> Natural
@@ -140,7 +143,7 @@ const Tab1Content = () => {
           <span style={{ fontWeight: "600" }}>Authors: Aswin Balaji</span>,
           Shruti Tandon, Norbert Marwan, Jürgen Kurths, R. I. Sujith
           <br />
-          Abstract accepted to{" "}
+          Abstract accepted at{" "}
           <Link
             underline="hover"
             target="_blank"

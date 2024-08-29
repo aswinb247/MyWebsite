@@ -1,12 +1,12 @@
 .research-home {
-    margin-top: 72px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
     background-color: #d9d9d9;
-    min-height: 92vh;
+    min-height: 94vh;
   }
   
   .research-card-wrapper {
