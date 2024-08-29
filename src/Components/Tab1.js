@@ -81,9 +81,7 @@ const Tab1Content = () => {
             arXiv:2311.08101
           </Link>{" "}
           (2024)
-          <sub style={{ fontStyle: "italic" }}>
-             manuscript is under review.
-          </sub>
+          <sup style={{ fontStyle: "italic" }}>manuscript is under review.</sup>
           <br />
           <span style={{ fontWeight: "600" }}>Keywords:</span> Emergence of
           order, Transition Networks, Complexity, Network entropy, Fluctuations
@@ -113,12 +111,12 @@ const Tab1Content = () => {
             arXiv:2311.08101
           </Link>{" "}
           (2024)
-          <sub style={{ fontStyle: "italic" }}>
-             manuscript is under review.
-          </sub>
+          <sup style={{ fontStyle: "italic" }}>manuscript is under review.</sup>
           <br />
-          <span style={{ fontWeight: "600" }}>Authors: Shruti Tandon</span>
-          , Aswin Balaji, Norbert Marwan, Jürgen Kurths, R. I. Sujith
+          <span style={{ fontWeight: "600" }}>
+            Authors: Shruti Tandon, Aswin Balaji
+          </span>
+          , Norbert Marwan, Jürgen Kurths, R. I. Sujith
           <br />
           <span style={{ fontWeight: "600" }}>Keywords:</span> Natural
           Visibility Graphs (NVGs), Intermittency, Frequency Modulation (FM),
@@ -142,7 +140,7 @@ const Tab1Content = () => {
           <span style={{ fontWeight: "600" }}>Authors: Aswin Balaji</span>,
           Shruti Tandon, Norbert Marwan, Jürgen Kurths, R. I. Sujith
           <br />
-          Abstract submitted to{" "}
+          Abstract accepted to{" "}
           <Link
             underline="hover"
             target="_blank"
