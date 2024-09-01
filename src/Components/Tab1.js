@@ -24,7 +24,7 @@ const Tab1Content = () => {
           <br />
           <br />I have been working in Prof. Sujith’s lab since February 2022,
           studying turbulent thermo-acoustic systems using tools of complex
-          system theory. I also got an opportunity to meet our collaborators —
+          system theory. I also got an opportunity to meet our collaborators —{" "}
           <Link
             underline="hover"
             target="_blank"
@@ -80,9 +80,9 @@ const Tab1Content = () => {
           >
             arXiv:2311.08101
           </Link>{" "}
-          (2024).
+          (2024).{" "}
           <span style={{ fontStyle: "italic" }}>
-            manuscript is under review.
+            Manuscript is under review.
           </span>
           <br />
           <span style={{ fontWeight: "600" }}>Keywords:</span> Emergence of
@@ -112,9 +112,9 @@ const Tab1Content = () => {
           >
             arXiv:2311.08101
           </Link>{" "}
-          (2024).
+          (2024).{" "}
           <span style={{ fontStyle: "italic" }}>
-            manuscript is under review.
+            Manuscript is under review.
           </span>
           <br />
           <span style={{ fontWeight: "600" }}>Authors: </span>

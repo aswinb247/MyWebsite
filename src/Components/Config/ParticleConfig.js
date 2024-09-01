@@ -518,7 +518,7 @@ const particlesConfig = {
   responsive: [],
   smooth: false,
   style: {
-    height: "40vh",
+    height: "30vh",
     position: 'absolute',
     zIndex: -100
   },
