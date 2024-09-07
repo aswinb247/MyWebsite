@@ -34,10 +34,7 @@ const Tab3Content = () => {
             sx={{ fontStyle: "italic" }}
           >
             here.
-          </Link>{" "}
-          <br />
-          <span style={{ fontWeight: "600" }}>Keywords:</span> Emergence of
-          order, Transition Networks, Complexity, Network entropy, Fluctuations
+          </Link>
         </Typography>
       </Grid>
       <Grid item xs={11}>

@@ -10,39 +10,39 @@ import {
 // import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-//   const [isSubmitting, setIsSubmitting] = React.useState(false);
-//   const [stateMessage, setStateMessage] = React.useState(null);
-//   const sendEmail = (e) => {
-//     e.persist();
-//     e.preventDefault();
-//     setIsSubmitting(true);
-//     emailjs
-//       .sendForm(
-//         process.env.REACT_APP_SERVICE_ID,
-//         process.env.REACT_APP_TEMPLATE_ID,
-//         e.target,
-//         process.env.REACT_APP_PUBLIC_KEY
-//       )
-//       .then(
-//         (result) => {
-//           setStateMessage("Message sent!");
-//           setIsSubmitting(false);
-//           setTimeout(() => {
-//             setStateMessage(null);
-//           }, 5000); // hide message after 5 seconds
-//         },
-//         (error) => {
-//           setStateMessage("Something went wrong, please try again later");
-//           setIsSubmitting(false);
-//           setTimeout(() => {
-//             setStateMessage(null);
-//           }, 5000); // hide message after 5 seconds
-//         }
-//       );
+  //   const [isSubmitting, setIsSubmitting] = React.useState(false);
+  //   const [stateMessage, setStateMessage] = React.useState(null);
+  //   const sendEmail = (e) => {
+  //     e.persist();
+  //     e.preventDefault();
+  //     setIsSubmitting(true);
+  //     emailjs
+  //       .sendForm(
+  //         process.env.REACT_APP_SERVICE_ID,
+  //         process.env.REACT_APP_TEMPLATE_ID,
+  //         e.target,
+  //         process.env.REACT_APP_PUBLIC_KEY
+  //       )
+  //       .then(
+  //         (result) => {
+  //           setStateMessage("Message sent!");
+  //           setIsSubmitting(false);
+  //           setTimeout(() => {
+  //             setStateMessage(null);
+  //           }, 5000); // hide message after 5 seconds
+  //         },
+  //         (error) => {
+  //           setStateMessage("Something went wrong, please try again later");
+  //           setIsSubmitting(false);
+  //           setTimeout(() => {
+  //             setStateMessage(null);
+  //           }, 5000); // hide message after 5 seconds
+  //         }
+  //       );
 
-//     // Clears the form after sending the email
-//     e.target.reset();
-//   };
+  //     // Clears the form after sending the email
+  //     e.target.reset();
+  //   };
   return (
     <Grid
       container
