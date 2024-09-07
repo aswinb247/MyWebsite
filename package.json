@@ -1,7 +1,7 @@
 {
   "name": "aswin-pro",
   "version": "0.1.0",
-  "homepage": "http://aswinb247.github.io/MyWebsite",
+  "homepage": "http://aswinb247.github.io/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
