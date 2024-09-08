@@ -5,7 +5,7 @@ import { HashRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Router basename={"/MyWebsite"}>
+  <Router basename="/">
     <App />
   </Router>
 );
