@@ -7,42 +7,42 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  //   const [isSubmitting, setIsSubmitting] = React.useState(false);
-  //   const [stateMessage, setStateMessage] = React.useState(null);
-  //   const sendEmail = (e) => {
-  //     e.persist();
-  //     e.preventDefault();
-  //     setIsSubmitting(true);
-  //     emailjs
-  //       .sendForm(
-  //         process.env.REACT_APP_SERVICE_ID,
-  //         process.env.REACT_APP_TEMPLATE_ID,
-  //         e.target,
-  //         process.env.REACT_APP_PUBLIC_KEY
-  //       )
-  //       .then(
-  //         (result) => {
-  //           setStateMessage("Message sent!");
-  //           setIsSubmitting(false);
-  //           setTimeout(() => {
-  //             setStateMessage(null);
-  //           }, 5000); // hide message after 5 seconds
-  //         },
-  //         (error) => {
-  //           setStateMessage("Something went wrong, please try again later");
-  //           setIsSubmitting(false);
-  //           setTimeout(() => {
-  //             setStateMessage(null);
-  //           }, 5000); // hide message after 5 seconds
-  //         }
-  //       );
+  const [, setIsSubmitting] = React.useState(false);
+  const [, setStateMessage] = React.useState(null);
+  const sendEmail = (e) => {
+    e.persist();
+    e.preventDefault();
+    setIsSubmitting(true);
+    emailjs
+      .sendForm(
+        "service_wl73u18",
+        "template_vjijtek",
+        e.target,
+        "X25RWO3ZLOExV6uHd"
+      )
+      .then(
+        (result) => {
+          setStateMessage("Message sent!");
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 5000); // hide message after 5 seconds
+        },
+        (error) => {
+          setStateMessage("Something went wrong, please try again later");
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 5000); // hide message after 5 seconds
+        }
+      );
 
-  //     // Clears the form after sending the email
-  //     e.target.reset();
-  //   };
+    // Clears the form after sending the email
+    e.target.reset();
+  };
   return (
     <Grid
       container
@@ -60,7 +60,7 @@ const Contact = () => {
           >
             Get In Touch !
           </Typography>
-          <form>
+          <form onSubmit={sendEmail}>
             <Grid container spacing={1}>
               <Grid xs={12} sm={6} item>
                 <TextField
@@ -70,6 +70,7 @@ const Contact = () => {
                   fullWidth
                   required
                   className="Text-Body"
+                  name="name"
                 />
               </Grid>
               <Grid xs={12} sm={6} item>
@@ -91,6 +92,7 @@ const Contact = () => {
                   fullWidth
                   required
                   className="Text-Body"
+                  name="email"
                 />
               </Grid>
               <Grid item xs={12}>
@@ -102,6 +104,7 @@ const Contact = () => {
                   fullWidth
                   required
                   className="Text-Body"
+                  name="number"
                 />
               </Grid>
               <Grid item xs={12}>
@@ -114,6 +117,7 @@ const Contact = () => {
                   fullWidth
                   required
                   className="Text-Body"
+                  name="message"
                 />
               </Grid>
               <Grid item xs={12}>
